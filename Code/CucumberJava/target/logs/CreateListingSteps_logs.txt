@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Rate-Limit-Limit: 1000
+X-Rate-Limit-Remaining: 998
+X-Rate-Limit-Reset: 2054
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag
+Date: Mon, 16 May 2022 14:25:46 GMT
+Content-Length: 85
+X-UA-Compatible: IE=Edge
+Vary: Accept-Encoding
+
+{
+    "Success": true,
+    "Description": "ListingId 2149418152 created.",
+    "ListingId": 2149418152
+}
+   "ABC"
+    ],
+    "StartPrice": 123.0,
+    "ReservedPrice": 123.0,
+    "BuyNowPrice": 123.0,
+    "Duration": 10,
+    "Pickup": 1,
+    "ShippingOptions": [
+        {
+            "Type": 1,
+            "Price": 123.0,
+            "Method": "\"ABC\"",
+            "ShippingId": 123
+        },
+        {
+            "Type": 1,
+            "Price": 123.0,
+            "Method": "\"ABC\"",
+            "ShippingId": 123
+        }
+    ],
+    "PaymentMethods": [
+        1,
+        1
+    ]
+}

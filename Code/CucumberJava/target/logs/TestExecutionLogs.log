@@ -1,0 +1,166 @@
+19:25:36.641 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Test Execution started_ "user provide valid keys"
+19:25:36.644 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to get payload from SellingListHelper class
+19:25:36.645 [main] DEBUG utilities.APIHelpers.Serialization.SellingListHelper - About to add Shipping options from Selling Payload Constants class in Shipping option list
+19:25:36.647 [main] INFO  utilities.APIHelpers.Serialization.SellingListHelper - Shipping options list is created
+19:25:36.647 [main] DEBUG utilities.APIHelpers.Serialization.SellingListHelper - About to add Description from Selling Payload Constants class in description list
+19:25:36.647 [main] INFO  utilities.APIHelpers.Serialization.SellingListHelper - Description list is created
+19:25:36.647 [main] DEBUG utilities.APIHelpers.Serialization.SellingListHelper - About to add Payment Method from Selling Payload Constants class in Payment Method list
+19:25:36.647 [main] INFO  utilities.APIHelpers.Serialization.SellingListHelper - Payment method list is created
+19:25:36.647 [main] DEBUG utilities.APIHelpers.Serialization.SellingListHelper - About to initialize SellingList with providing all paramters in constructor
+19:25:36.648 [main] INFO  utilities.APIHelpers.Serialization.SellingListHelper - SellingList is initialized
+19:25:36.648 [main] DEBUG utilities.APIHelpers.Serialization.SellingListHelper - About to use GSON to Serialize SellingList object into a JSON string payload.
+19:25:36.695 [main] INFO  utilities.APIHelpers.Serialization.SellingListHelper - JSON String payload is created
+19:25:36.695 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Payload: {"Category":2273,"Title":"ABC","Subtitle":"ABC","Description":["ABC","ABC"],"StartPrice":123.0,"ReservedPrice":123.0,"BuyNowPrice":123.0,"Duration":10,"Pickup":1,"ShippingOptions":[{"Type":1,"Price":123.0,"Method":"\"ABC\"","ShippingId":123},{"Type":1,"Price":123.0,"Method":"\"ABC\"","ShippingId":123}],"PaymentMethods":[1,1]}
+19:25:36.695 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to get class name as String
+19:25:36.695 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to build a Request Specification with passing class name as parameter
+19:25:36.695 [main] DEBUG utilities.APIHelpers.specifications.Specifications - About to construct Request specification using className to create specific API Request and Response Log file
+19:25:37.194 [main] DEBUG utilities.Common - Getting log file path for CreateListingSteps
+19:25:37.194 [main] INFO  utilities.Common - Log file created for CreateListingSteps
+19:25:37.202 [main] DEBUG utilities.Common - Getting log file path for CreateListingSteps
+19:25:37.203 [main] INFO  utilities.Common - Log file created for CreateListingSteps
+19:25:37.207 [main] INFO  utilities.APIHelpers.specifications.Specifications - Request Specification created. API logs for both Request and Response will be added in CreateListingSteps_log file
+19:25:37.207 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to build a Response Specifications with providing Authentication token, content type and body
+19:25:37.405 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Response Specifications created with all parameters, payloads and content type
+19:25:37.422 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Test execution started _ "user sends post request on "
+19:25:37.422 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to send post request on endpoint: https://api.tmsandbox.co.nz/v1/Selling.json
+19:25:37.422 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - For details related to API request, refer CreateListingSteps_logs.txt file
+19:25:46.675 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Response is created with sending post request on endpoint: https://api.tmsandbox.co.nz/v1/Selling.json
+19:25:46.676 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Test execution started _ "api_responds_with " 
+19:25:46.676 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to Assert status code with expected status code: 200 and extracting response as a String
+19:25:46.690 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Status code: 200 is asserted sucessfully
+19:25:46.691 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to get Listing ID from JSON response: {
+    "Success": true,
+    "Description": "ListingId 2149418152 created.",
+    "ListingId": 2149418152
+}
+19:25:46.691 [main] DEBUG utilities.Common - Creating JSON path object to read values from JSON String
+19:25:47.176 [main] INFO  utilities.Common - Value:2149418152 is retrieved for key: ListingId
+19:25:47.176 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Listing id retrieved: 2149418152
+19:25:47.176 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to get Description from JSON response: {
+    "Success": true,
+    "Description": "ListingId 2149418152 created.",
+    "ListingId": 2149418152
+}
+19:25:47.176 [main] DEBUG utilities.Common - Creating JSON path object to read values from JSON String
+19:25:47.193 [main] INFO  utilities.Common - Value:ListingId 2149418152 created. is retrieved for key: Description
+19:25:47.193 [main] INFO  stepdefinitions.RestAPI.CreateListingSteps - Description retrieved: ListingId 2149418152 created.
+19:25:47.193 [main] DEBUG stepdefinitions.RestAPI.CreateListingSteps - About to perform Assertion of expected message: ListingId 2149418152 created. with actual message: ListingId 2149418152 created.
+19:25:47.210 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to start Test execution of : SearchCharityFunctionality
+19:25:47.210 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to create Request Specification with URI and class name
+19:25:47.211 [main] DEBUG utilities.APIHelpers.specifications.Specifications - About to construct Request specification with https://api.tmsandbox.co.nz/ and using className to create specific API Request and Response Log file
+19:25:47.211 [main] DEBUG utilities.Common - Getting log file path for SearchCharitiesSteps
+19:25:47.211 [main] INFO  utilities.Common - Log file created for SearchCharitiesSteps
+19:25:47.211 [main] DEBUG utilities.Common - Getting log file path for SearchCharitiesSteps
+19:25:47.211 [main] INFO  utilities.Common - Log file created for SearchCharitiesSteps
+19:25:47.212 [main] INFO  utilities.APIHelpers.specifications.Specifications - Request Specification created. API logs for both Request and Response will be added in SearchCharitiesSteps_log file
+19:25:47.213 [main] INFO  stepdefinitions.RestAPI.SearchCharitiesSteps - Request Specification is created
+19:25:47.214 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to send Get Request on endpoint: /v1/Charities.json
+19:25:51.994 [main] INFO  stepdefinitions.RestAPI.SearchCharitiesSteps - Response is created with all parameters and Get request 
+19:25:51.995 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to validate API status code with expected status code: 200
+19:25:51.997 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to get list of charities from CharityListHelper class
+19:25:51.998 [main] DEBUG utilities.APIHelpers.DeSerialization.CharityListHelper - About to Deserialize JSON response to CharitiesList class
+19:25:52.164 [main] DEBUG utilities.APIHelpers.DeSerialization.CharityListHelper - About to add Charities list description in list of charities
+19:25:52.164 [main] INFO  utilities.APIHelpers.DeSerialization.CharityListHelper - Save the Kiwi is added in list of charities
+19:25:52.165 [main] DEBUG utilities.APIHelpers.DeSerialization.CharityListHelper - About to add Charities list description in list of charities
+19:25:52.165 [main] INFO  utilities.APIHelpers.DeSerialization.CharityListHelper - Plunket is added in list of charities
+19:25:52.165 [main] DEBUG utilities.APIHelpers.DeSerialization.CharityListHelper - About to add Charities list description in list of charities
+19:25:52.165 [main] INFO  utilities.APIHelpers.DeSerialization.CharityListHelper - St John is added in list of charities
+19:25:52.165 [main] DEBUG utilities.APIHelpers.DeSerialization.CharityListHelper - About to add Charities list description in list of charities
+19:25:52.165 [main] INFO  utilities.APIHelpers.DeSerialization.CharityListHelper - Our People, Our City Fund is added in list of charities
+19:25:52.165 [main] INFO  stepdefinitions.RestAPI.SearchCharitiesSteps - Charities name are displayed and added in list
+19:25:52.166 [main] DEBUG stepdefinitions.RestAPI.SearchCharitiesSteps - About to validate that list contains St John charity
+19:25:52.166 [main] INFO  stepdefinitions.RestAPI.SearchCharitiesSteps - St John is available in Charitylist description
+19:25:55.784 [main] INFO  factory.DriverFactory - Initializing Driver to launch Web UI Tests
+19:25:55.784 [main] DEBUG factory.DriverFactory - Setting up browser to be used for Application under test
+19:25:55.785 [main] DEBUG factory.DriverFactory - About to Setup ChromeDriver using WebDriverManager
+19:25:57.949 [main] DEBUG factory.DriverFactory - About to start ChromeDriver browser
+19:26:00.340 [main] INFO  factory.DriverFactory - Chrome Browser is launched
+19:26:00.340 [main] DEBUG factory.DriverFactory - About to setup driver properties: deleteAllCookies
+19:26:00.364 [main] DEBUG factory.DriverFactory - About to setup driver properties: window maximize
+19:26:00.515 [main] INFO  factory.DriverFactory - driver is initialized
+19:26:00.515 [main] DEBUG factory.DriverFactory - About to setup Explicit Wait to be used across several tests
+19:26:00.536 [main] INFO  factory.DriverFactory - Explicit wait is initialized
+19:26:00.538 [main] INFO  factory.DriverFactory - About to Start Test Execution of Search Old Car functionality
+19:26:15.757 [main] DEBUG factory.DriverFactory - About to initialize HomePageHelper class
+19:26:15.783 [main] DEBUG factory.DriverFactory - About to initialize MotorPageHelper class
+19:26:15.784 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:15.844 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//a[@classiclink='motors']] is visible on page
+19:26:15.844 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//a[@classiclink='motors']]
+19:26:15.919 [main] INFO  pages.homepage.HomePageHelper - Motor section is clicked
+19:26:15.919 [main] DEBUG pages.homepage.HomePageHelper - About to wait for Title update after navigating to Motor page
+19:26:15.919 [main] DEBUG utilities.Common - Setting up explicit wait with configured wait time 15
+19:26:15.919 [main] DEBUG utilities.Common - Waiting for change of page title
+19:26:23.774 [main] INFO  utilities.Common - Page Title changed
+19:26:23.840 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:23.860 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//tg-tab-heading[text()=' Used ']] is visible on page
+19:26:23.860 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//tg-tab-heading[text()=' Used ']]
+19:26:23.936 [main] INFO  pages.automobiles.MotorPageHelper - User Car Tab is clicked
+19:26:23.937 [main] DEBUG utilities.Common - Validating provided strings : [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//input[@name='keyword']] and Mca84 are not null
+19:26:23.938 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//input[@name='keyword']]
+19:26:24.032 [main] DEBUG utilities.Common - Clearing input field
+19:26:24.192 [main] DEBUG utilities.Common - Sending keys to element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//input[@name='keyword']]
+19:26:24.287 [main] INFO  pages.automobiles.MotorPageHelper - Keyword is entered
+19:26:24.288 [main] DEBUG pages.automobiles.MotorPageHelper - About to Initialize Select class for Make dropdown
+19:26:24.309 [main] DEBUG pages.automobiles.MotorPageHelper - About to select make: Honda from Make dropdown
+19:26:24.402 [main] INFO  pages.automobiles.MotorPageHelper - Make: Honda is selected from Make dropdown
+19:26:24.403 [main] DEBUG pages.automobiles.MotorPageHelper - About to wait for Model dropdown till its clickable
+19:26:25.650 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:25.680 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//select[@name='searchParams.model']] is visible on page
+19:26:25.680 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//select[@name='searchParams.model']]
+19:26:25.814 [main] DEBUG pages.automobiles.MotorPageHelper - About to initialize Select class for Model dropdown
+19:26:25.868 [main] DEBUG pages.automobiles.MotorPageHelper - About to select Model: Civic from Model dropdown
+19:26:25.968 [main] INFO  pages.automobiles.MotorPageHelper - Model: Civic is selected from Model dropdown
+19:26:25.972 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:25.998 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//div[@class='tm-motors-search-bar__dropdown-multi-select']/button] is visible on page
+19:26:25.998 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//div[@class='tm-motors-search-bar__dropdown-multi-select']/button]
+19:26:26.135 [main] DEBUG pages.automobiles.MotorPageHelper - About to wait for presence of Body Type element on page
+19:26:26.163 [main] DEBUG pages.automobiles.MotorPageHelper - About to iterate Body type options to select given BodyType: Sedan
+19:26:26.190 [main] ERROR pages.automobiles.MotorPageHelper - BodyType: Sedan doesnt match with available Body type 
+19:26:26.214 [main] ERROR pages.automobiles.MotorPageHelper - BodyType: Sedan doesnt match with available Body type 
+19:26:26.236 [main] ERROR pages.automobiles.MotorPageHelper - BodyType: Sedan doesnt match with available Body type 
+19:26:26.256 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:26.279 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//span[@class='o-checkbox__label-text']] is visible on page
+19:26:26.279 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//span[@class='o-checkbox__label-text']]
+19:26:26.386 [main] INFO  pages.automobiles.MotorPageHelper - BodyType: Sedan is selected
+19:26:26.387 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:26.423 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//button[@type='submit']] is visible on page
+19:26:26.423 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//button[@type='submit']]
+19:26:26.563 [main] INFO  pages.automobiles.MotorPageHelper - Search button is clicked
+19:26:26.566 [main] DEBUG factory.DriverFactory - About to validate that search results are displayed
+19:26:26.566 [main] DEBUG pages.automobiles.MotorPageHelper - About to wait for visibility of WebElement on Search Page
+19:26:29.153 [main] INFO  factory.DriverFactory - Search results are displayed
+19:26:29.154 [main] DEBUG pages.searchresults.SearchResultHelper - About to creat list of WebElements for Searched car Titles
+19:26:29.189 [main] DEBUG pages.searchresults.SearchResultHelper - About to iterate car titles to select given car: Civic
+19:26:29.211 [main] DEBUG utilities.Common - Validating element visibility on page
+19:26:29.247 [main] INFO  utilities.Common - Element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//div[@tmid='title']] is visible on page
+19:26:29.248 [main] DEBUG utilities.Common - Clicking on element: [[ChromeDriver: chrome on WINDOWS (15ec3a0c5a5c22584cb5e2b7bed08c81)] -> xpath: .//div[@tmid='title']]
+19:26:29.411 [main] INFO  pages.searchresults.SearchResultHelper - Car: Civic is selected from Search results
+19:26:29.412 [main] DEBUG factory.DriverFactory - About to perform assertion on Search results are displayed
+19:26:29.412 [main] DEBUG pages.searchresults.SearchResultHelper - About to wait for visibility of element after page navigation to searched car page
+19:26:31.932 [main] INFO  factory.DriverFactory - Search results are displayed
+19:26:31.933 [main] DEBUG pages.searchresults.SearchResultHelper - About to wait for visibility of search Filters on page
+19:26:33.550 [main] INFO  pages.searchresults.SearchResultHelper - Search filters are displayed on page
+19:26:33.677 [main] INFO  pages.searchresults.SearchResultHelper - 28,523km added in filter list
+19:26:33.724 [main] INFO  pages.searchresults.SearchResultHelper - Sedan added in filter list
+19:26:33.760 [main] INFO  pages.searchresults.SearchResultHelper - 5 added in filter list
+19:26:33.804 [main] INFO  pages.searchresults.SearchResultHelper - Petrol added in filter list
+19:26:35.167 [main] INFO  pages.searchresults.SearchResultHelper - 1498cc added in filter list
+19:26:35.244 [main] INFO  pages.searchresults.SearchResultHelper - Automatic added in filter list
+19:26:35.272 [main] INFO  pages.searchresults.SearchResultHelper - MCA84 added in filter list
+19:26:35.318 [main] INFO  pages.searchresults.SearchResultHelper - Modern Steel added in filter list
+19:26:35.319 [main] DEBUG factory.DriverFactory - About to verify if Number plate information is displayed on filters section of page
+19:26:35.319 [main] DEBUG pages.searchresults.SearchResultHelper - About to validate filter: MCA84 is available in Filter list
+19:26:35.319 [main] INFO  pages.searchresults.SearchResultHelper - MCA84 is available in filter section
+19:26:35.319 [main] INFO  factory.DriverFactory - Number plate information is available on filters section of page
+19:26:35.322 [main] DEBUG factory.DriverFactory - About to verify if Mileage information is displayed on filters section of page
+19:26:35.323 [main] DEBUG pages.searchresults.SearchResultHelper - About to validate filter: 28,523km is available in Filter list
+19:26:35.323 [main] INFO  pages.searchresults.SearchResultHelper - 28,523km is available in filter section
+19:26:35.323 [main] INFO  factory.DriverFactory - Mileage information is available on filters section of page
+19:26:35.325 [main] DEBUG factory.DriverFactory - About to verify if Body information is displayed on filters section of page
+19:26:35.325 [main] DEBUG pages.searchresults.SearchResultHelper - About to validate filter: Sedan is available in Filter list
+19:26:35.325 [main] INFO  pages.searchresults.SearchResultHelper - Sedan is available in filter section
+19:26:35.325 [main] INFO  factory.DriverFactory - Body information is available on filters section of page
+19:26:35.326 [main] DEBUG factory.DriverFactory - About to verify if Seats information is displayed on filters section of page
+19:26:35.326 [main] DEBUG pages.searchresults.SearchResultHelper - About to validate filter: 5 is available in Filter list
+19:26:35.326 [main] INFO  pages.searchresults.SearchResultHelper - 5 is available in filter section
+19:26:35.327 [main] INFO  factory.DriverFactory - Seats information is available on filters section of page

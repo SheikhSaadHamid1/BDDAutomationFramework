@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ETag: "QpTx0qx0zhGcdPNEvF/sOe8I5bk="
+X-Correlation-ID: 85a77696-3213-4812-b601-4db8851b8731
+X-Request-ID: 5bc2cfbf-3cf4-4abe-b5ad-ca2707dcb7a9
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag
+Date: Mon, 16 May 2022 14:25:51 GMT
+Content-Length: 535
+X-UA-Compatible: IE=Edge
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Connection: Keep-Alive
+
+[
+    {
+        "CharityType": 1,
+        "ImageSource": "https://www.tmsandbox.co.nz/images/sell/charities/SaveTheKiwi-light.png",
+        "DarkModeImageSource": "https://www.tmsandbox.co.nz/images/sell/charities/SaveTheKiwi-dark.png",
+        "Description": "Save the Kiwi",
+        "Tagline": "Protecting kiwi and the places they live."
+    },
+    {
+        "CharityType": 2,
+        "ImageSource": "https://www.tmsandbox.co.nz/images/sell/charities/Plunket-light.png",
+        "DarkModeImageSource": "https://www.tmsandbox.co.nz/images/sell/charities/Plunket-dark.png",
+        "Description": "Plunket",
+        "Tagline": "A major provider of well child health services in NZ."
+    },
+    {
+        "CharityType": 3,
+        "ImageSource": "https://www.tmsandbox.co.nz/images/sell/st_john_logo_light.png",
+        "DarkModeImageSource": "https://www.tmsandbox.co.nz/images/sell/st_john_logo_dark.png",
+        "Description": "St John",
+        "Tagline": "To support St John in the work they do in our community."
+    },
+    {
+        "CharityType": 4,
+        "ImageSource": "https://www.tmsandbox.co.nz/images/sell/chch_foundation_light.png",
+        "DarkModeImageSource": "https://www.tmsandbox.co.nz/images/sell/chch_foundation_dark.png",
+        "Description": "Our People, Our City Fund",
+        "Tagline": "This will be used to support the families and Muslim communities impacted by the tragic events in Christchurch."
+    }
+]

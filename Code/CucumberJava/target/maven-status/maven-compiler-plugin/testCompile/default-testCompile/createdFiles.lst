@@ -1,0 +1,6 @@
+testrunners\TestRunner_API.class
+myhooks\ApplicationHooks.class
+testrunners\TestRunner_Web.class
+stepdefinitions\WebUI\SearchOldCarSteps.class
+stepdefinitions\RestAPI\CreateListingSteps.class
+stepdefinitions\RestAPI\SearchCharitiesSteps.class

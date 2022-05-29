@@ -7,7 +7,7 @@ Before starting the execution of script, please ensure, that environment is conf
 •	Maven. 
 
 Java JDK path should be configured in Environment variables.
-For this assignment, Java version 1.8 and Maven version 3.8.1 is used.
+For this project, Java version 1.8 and Maven version 3.8.1 is used.
 
 
 Getting Code from GitHub
@@ -28,6 +28,8 @@ Type following commands in command line
 Or write a single command to compile and run both API and Web tests
 •	mvn compile verify
 
+
+
 Running API Only Scripts
 
 Type following command in command line to run API Only tests
@@ -42,7 +44,7 @@ Type following command in command line to run Web Only tests
 •	mvn compile
 •	mvn test -Dcucumber.filter.tags="@WebTest"
 
-
+Note: Data Parameters for Web Tests and Authentication Credentials might needs to be updated to run successful tests. 
 
 
 

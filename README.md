@@ -44,7 +44,7 @@ Type following command in command line to run Web Only tests
 •	mvn compile
 •	mvn test -Dcucumber.filter.tags="@WebTest"
 
-Note: Data Parameters for Web Tests and Authentication Credentials might needs to be updated to run successful tests. 
+Note: Data Parameters for Web Tests and Authentication Credentials for API Tests might needs to be updated to run successful tests. 
 
 
 
